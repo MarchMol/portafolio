@@ -1,0 +1,29 @@
+
+.projects img{
+    max-height: 30vh;
+    max-width: 60vh;
+    gap: 1vh;
+}
+
+.projects .projCard{
+
+    background-color: #383838;
+    padding: 3vh;
+    border-radius: 2vh;
+    border: 0.5vh solid white;
+    color: white;
+    max-width: 40vw;
+    min-height: 25vw;
+}
+.projects p{
+    max-width: 40vw;
+}
+
+.sliderContainer{
+    width: 45vw;
+}
+
+.slick-slide > div{
+    margin: 0 2vh;
+    
+}
