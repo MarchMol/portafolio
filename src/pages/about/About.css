@@ -1,6 +1,7 @@
 .container{
     display: flex;
     gap: 2vh;
+    max-width: 80vw;
 }
 .about img{
     max-width: 40vh;
