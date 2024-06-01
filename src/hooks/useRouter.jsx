@@ -8,19 +8,17 @@ const focuses = {
     '/tech': 'focusFront'
 }
 
-const RouterContext = createContext({ getFocus: ()=>{}, page: '/home', navigate: () => {} })
+const RouterContext = createContext({ loading:false, setLoading:()=>{}, page: '/home', navigate: () => {} })
 const RouterProvider = ({ children }) => {
   const [page, setPage] = useState('/home')
+  const [loading, setLoading] = useState(false)
 
-  const getFocus=()=>{
-    return focuses[page]
-  }
   const navigate = (destiny) => {
     setPage(destiny)
   }
 
   return (
-        <RouterContext.Provider value={{ page, navigate, getFocus }}>
+        <RouterContext.Provider value={{ page, navigate, loading, setLoading }}>
             {children}
         </RouterContext.Provider>
   )
