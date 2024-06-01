@@ -1,9 +1,23 @@
 button{
-    background-color: #afafaf;
+    background-color: #F17551;
     padding: 1.5vh;
     border-radius: 2vh;
     transition: 0.3s;
     font-size: 3vh;
-    color: white;
+    color: #4e2215;
+    border:0.3vh solid #eea08b;
+    box-shadow:
+    0.3vh 0.3vh 0.6vh 00 rgba(0, 0, 0, 0.404);
+}
+button:hover{
+    background-color: #ff9679;
+
+}
+
+button h2{
+    margin: 1vh;
+}
+button#selected{
+    background-color: #e65932;
 }
 

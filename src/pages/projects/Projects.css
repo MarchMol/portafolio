@@ -8,8 +8,17 @@
     gap: 1vh;
 }
 
-.projects .projCard{
+.projCard a{
+display: flex;
+justify-content: center;
+background: linear-gradient(90deg, rgba(205,190,119,1) 0%, rgba(241,117,81,1) 100%);
+padding: 2vh;
+border-radius: 1vh;
+}
 
+.projects .projCard{
+    display: flex;
+    justify-content: center;
     background-color: #383838;
     padding: 3vh;
     border-radius: 2vh;

@@ -23,11 +23,13 @@ const Projects = () =>{
              <div className="sliderContainer">
              <Slider {...settings}>
                 {projectCards.map((c, key)=>(
-                    <div key={key} className="projCard">
+                    <div key={key} className="projCard" style={{ display: 'flex' }}>
                         <h2>{c.name}</h2>
+                        <div className="img">
                         <a href={c.link}>
                         <img src={c.img}/>
                         </a>
+                        </div>
                         <p>{c.description}</p>
                     </div>
                 ))}

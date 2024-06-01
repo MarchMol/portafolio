@@ -12,7 +12,6 @@ const Button = ({ text, onClick}) => {
             setSelected(!selected)
         }
     }
-
  
     return(
         <button
@@ -23,7 +22,7 @@ const Button = ({ text, onClick}) => {
         id={selected ? 'selected' : ''}
         disabled={loading}
         >
-            {text}
+            <h2>{text}</h2>
         </button>
     )
 }

@@ -6,7 +6,7 @@ import Tech from "./pages/tech/Tech"
 import useRouter from "./hooks/useRouter"
 import Cube from "./components/cube/Cube"
 import Button from "./components/button/Button"
-import MockFace from "./components/cube/MockFace"
+import MockFace from "./components/mockface/MockFace"
 
 const routes = {
     '/home': {
