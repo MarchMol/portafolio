@@ -1,0 +1,32 @@
+.technology img{
+    max-width: 6vh;
+}
+.technology .types{
+    display: flex;
+    gap: 2vh;
+}
+.technology .types{
+    display: flex;
+    gap: 2vh;
+}
+.technology .techElement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.technology .techElement p{
+text-align: center;
+}
+
+.technology .techCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* At most two elements per column */
+    grid-template-rows: 14vh 14vh 14vh; 
+    gap: 2vh; 
+    background-color: #383838;
+    padding: 3vh;
+    border-radius: 2vh;
+    border: 0.5vh solid white;
+}
