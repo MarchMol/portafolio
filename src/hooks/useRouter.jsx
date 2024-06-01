@@ -11,8 +11,11 @@ const focuses = {
 const RouterContext = createContext({ loading:false, setLoading:()=>{}, page: '/home', navigate: () => {} })
 const RouterProvider = ({ children }) => {
   const [page, setPage] = useState('/home')
-  const [loading, setLoading] = useState(false)
+  const [loading, putLoading] = useState(false)
 
+  const setLoading = (value) => {
+    putLoading(value)
+  }
   const navigate = (destiny) => {
     setPage(destiny)
   }

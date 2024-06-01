@@ -1,13 +1,12 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import About from "./pages/about/About"
 import Projects from "./pages/projects/Projects"
 import Contact from "./pages/contact/Contact"
-import Tech from "./components/tech/Tech"
+import Tech from "./pages/tech/Tech"
 import useRouter from "./hooks/useRouter"
 import Cube from "./components/cube/Cube"
 import Button from "./components/button/Button"
 import MockFace from "./components/cube/MockFace"
-
 
 const routes = {
     '/home': {
@@ -28,7 +27,7 @@ const routes = {
 }
 
 const Router = () => {
-    const [ signal, setSignal] = useState(false)
+    const [ signal, setSignal] = useState(0)
     const {page} = useRouter()
     let CurrentPage = () => <h1>404</h1>
 
@@ -38,18 +37,20 @@ const Router = () => {
   
     CurrentPage = routes[page].component
 
+    useEffect(()=>{
+        console.log(signal)
+    },[signal])
+
     const handleClick = () =>{
-        setSignal(!signal)
+        setSignal((signal+1)%5)
     }
 
     return(
-        <>
-            <h1>José Marchena</h1>
-            <h3>Personal Portfolio</h3>
+        <div className="main">
+            <Button text={signal===0 ? 'Start' : 'Next'} onClick={handleClick}/>
             <Cube signal={signal}/>
-            <Button text='Start' onClick={handleClick}/>
-            <MockFace PageRender={About} signal={signal} />
-        </>
+            <MockFace RenderPage={CurrentPage} signal={signal} />
+        </div>
     )
 }
 
