@@ -1,0 +1,46 @@
+.mockContainer{
+display: flex;
+justify-content: center;
+margin-top:10vh;
+}
+
+.MockFace{
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+}
+
+.MockFace#expand{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin-top:vh;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5vh;
+    transition: all 0.5s ease-in-out 0.5s;
+}
+
+#normal{
+    margin-top: 8vh;
+    border-radius: unset;
+    min-height: 20vh;
+    min-width: 20vh;
+    transition: all 0.5s ease-in-out 0.5s;
+}
+
+.about{
+    background-color: #CC1B4F;
+}
+
+.tech{
+    background-color: #F2BE97;
+}
+
+.proj{
+    background-color: #F17551;
+}
+
+.cont{
+    background-color: #A4195C;
+}

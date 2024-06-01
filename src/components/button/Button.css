@@ -1,0 +1,9 @@
+button{
+    background-color: #afafaf;
+    padding: 1.5vh;
+    border-radius: 2vh;
+    transition: 0.3s;
+    font-size: 3vh;
+    color: white;
+}
+
