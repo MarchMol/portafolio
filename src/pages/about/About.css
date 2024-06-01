@@ -1,0 +1,7 @@
+.container{
+    display: flex;
+    gap: 2vh;
+}
+.about img{
+    max-width: 40vh;
+}

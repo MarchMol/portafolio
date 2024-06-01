@@ -1,4 +1,7 @@
 
+.projects{
+    transition: all 0.3s ease-in-out 0.3;
+}
 .projects img{
     max-height: 30vh;
     max-width: 60vh;
@@ -10,13 +13,15 @@
     background-color: #383838;
     padding: 3vh;
     border-radius: 2vh;
-    border: 0.5vh solid white;
+    border: 0.3vh solid rgb(85, 85, 85);
+    box-shadow: -1px -1px 2px 2px rgba(255, 255, 255, 0.274),
+    0.3vh 0.3vh 0.6vh 0.3vh rgba(0, 0, 0, 0.5);
     color: white;
     max-width: 40vw;
     min-height: 25vw;
 }
 .projects p{
-    max-width: 40vw;
+    max-width: 38vw;
 }
 
 .sliderContainer{
@@ -24,6 +29,6 @@
 }
 
 .slick-slide > div{
-    margin: 0 2vh;
+    margin: 1vh 2vh;
     
 }
