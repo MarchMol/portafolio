@@ -1,0 +1,20 @@
+.contact img{
+    max-width: 14vh;
+    max-width: 14vh;
+    padding: 2vh;
+    border-radius: 2vh;
+    transition: background-color 0.1s ease-in;
+}
+
+.contact img:hover{
+    background-color: rgba(255, 255, 255, 0.219);
+}
+.contact{
+    color: white;
+}
+
+.contactLinks{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4vh;
+}
